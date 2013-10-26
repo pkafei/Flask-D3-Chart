@@ -40,7 +40,7 @@
       <div class="jumbotron">
         <h1>Sometimes Where is Only the Beginning...</h1>
         <p class="lead">Please put the Map Here!</p>
-        <p><button id="10">10</button><button id="20">20</button><button id="30">30</button></p>
+        <p><button id="Maryland">Maryland</button><button id="Texas">Texas</button><button id="Mississippi">Mississippi</button></p>
         <p> Then click on the "transition below to initiate the transition</p>
         <script type = "text/javascript">
 
@@ -108,17 +108,17 @@
         d3.selectAll("button")
         .on("click", function() {
             var number_of_data_points = this.getAttribute("id");
-            if (number_of_data_points == "10") {
+            if (number_of_data_points == "Maryland") {
                 dataset = [ 5, 10, 13, 19, 21, 25, 22, 18, 15, 13 ];
                 new_dataset = [11, 12, 15, 20, 18, 17, 16, 18, 23, 25 ];
 
-            } else if (number_of_data_points == "20") {
+            } else if (number_of_data_points == "Texas") {
                 dataset = [ 5, 10, 13, 19, 21, 25, 22, 18, 15, 13, 
                                     11, 12, 15, 20, 18, 17, 16, 18, 23, 25 ];
                 new_dataset = [ 11, 12, 15, 20, 18, 17, 16, 18, 23, 25,
                                                         5, 10, 13, 19, 21, 25, 22, 18, 15, 13 ];
 
-            } else if (number_of_data_points == "30") {
+            } else if (number_of_data_points == "Mississippi") {
                 dataset = [5, 10, 13, 19, 21, 25, 22, 18, 15, 13,
                                         11, 12, 15, 20, 18, 17, 16, 18, 23, 25,
                                         25, 16, 10, 18, 19, 14, 11, 15, 18, 19 ];
