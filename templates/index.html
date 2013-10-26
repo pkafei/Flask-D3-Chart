@@ -50,7 +50,7 @@
 
             //On click, update with new data    
                         
-            var dataset = [5, 10, 13, 19, 21, 25, 22, 18, 15, 13, 11, 12, 15, 20, 18, 17, 16, 18, 23, 25 ];
+            var dataset = [1234, 1082, 1635, 866, 1016];
 
             //Ordinal scale to handle left/right positioning
             var xScale = d3.scale.ordinal()
@@ -109,22 +109,16 @@
         .on("click", function() {
             var number_of_data_points = this.getAttribute("id");
             if (number_of_data_points == "Maryland") {
-                dataset = [ 5, 10, 13, 19, 21, 25, 22, 18, 15, 13 ];
-                new_dataset = [11, 12, 15, 20, 18, 17, 16, 18, 23, 25 ];
+                dataset = [ 1233, 1082, 1635, 866, 1016];
+                new_dataset = [1233, 1082, 1635, 866, 1016];
 
             } else if (number_of_data_points == "Texas") {
-                dataset = [ 5, 10, 13, 19, 21, 25, 22, 18, 15, 13, 
-                                    11, 12, 15, 20, 18, 17, 16, 18, 23, 25 ];
-                new_dataset = [ 11, 12, 15, 20, 18, 17, 16, 18, 23, 25,
-                                                        5, 10, 13, 19, 21, 25, 22, 18, 15, 13 ];
+                dataset = [ 4367, 5431, 6061, 5598, 5857];
+                new_dataset = [ 1233, 1082, 1635, 866, 1016];
 
             } else if (number_of_data_points == "Mississippi") {
-                dataset = [5, 10, 13, 19, 21, 25, 22, 18, 15, 13,
-                                        11, 12, 15, 20, 18, 17, 16, 18, 23, 25,
-                                        25, 16, 10, 18, 19, 14, 11, 15, 18, 19 ];
-                new_dataset = [25, 16, 10, 18, 19, 14, 11, 15, 18, 19, 
-                                                5, 10, 13, 19, 21, 25, 22, 18, 15, 13,
-                                                11, 12, 15, 20, 18, 17, 16, 18, 23, 25 ];
+                dataset = [295, 337, 254, 281, 288];
+                new_dataset = [4367, 5431, 6061, 5598, 5857]; 
             }  
             d3.selectAll("svg").remove();
 
